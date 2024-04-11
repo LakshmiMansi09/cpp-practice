@@ -1,0 +1,162 @@
+//scope resolution :
+#include<iostream>
+using namespace std;
+
+string colour = "pink";
+
+int function()
+{
+string name = "john";
+string colour = "blue" ;
+cout << "the boy's name is" << name << endl;
+cout << "he says his fav colour is " << colour << endl;
+cout << "but his fav colour is " << ::colour << endl;
+
+}
+
+int main()
+{
+    function();
+int age = 18;
+cout << "John is" << age << "years old. " << endl;
+return 0;
+
+}
+
+//local global variable 
+
+#include<iostream>
+using namespace std;
+
+string colour = "pink";
+
+int function()
+{
+string name = "john";
+string colour = "blue" ;
+cout << "the boy's name is" << name << endl;
+cout << "he says his fav colour is " << colour << endl;
+cout << "but his fav"
+
+}
+
+int main()
+{
+    function();
+int age = 18;
+cout << "John is" << age << "years old. " << endl;
+return 0;
+
+}
+
+
+// int and float can have neg vals also 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+    int val1 = -2;
+    float val2 = -2.8;
+
+    cout << "value of a is " << val1 << endl;
+    cout << "value of b is " << val2 << endl;
+    return 0;
+}
+
+
+//string and char
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    char val1 = 'a';
+    string val2 = "mansi";
+
+    cout << "the value of val1 and val2 are " << val1 <<" " <<  val2 << endl;
+
+    /* so '' is only for char values
+         and " " is for output and string. 
+         u cant use ' ' for output or string vals*/
+    return 0;
+
+}
+
+
+// bool values
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char val1 = 'a';
+    string val2 = "mansi";
+    int val3 = 5;
+    double val4 = 2.1;
+    bool isFemale = true;
+
+    cout << "the name of the player is " << val2 << endl;
+    cout << " is she a female? " << isFemale << endl;
+    cout << isFemale << endl ;
+
+    
+
+    bool isMale = 0;
+    cout << "is she a male? " << isMale << endl;
+
+    return 0;
+    
+
+
+
+    // can i use 0,1 on rhs
+    // can i use other name instead of isXyz
+}
+
+
+//numbers 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+    int val1 = 2;
+    double val2 = 3.2;
+
+    val1++;
+    val2++; 
+
+    cout << val1 << endl;
+    cout << val2;
+
+    return 0;
+
+}
+
+
+-------
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+
+    int a = 36;
+    int b = 5;
+    int c = 3;
+    cout << pow(3,2) << endl;
+    cout << sqrt(a) << endl;
+    cout << pow(5,3) ;
+
+    return 0;
+
+}
+
+-----------
+
+
