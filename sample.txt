@@ -1,0 +1,179 @@
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    cout << "\n\n Find Size of fundamental data types :\n"; // Outputting a message for finding the size of fundamental data types
+	cout << "------------------------------------------\n"; // Outputting a separator line
+    cout << " The sizeof(char) is :          " << sizeof(char) << " bytes \n" ; // Outputting the size of char
+    cout << " The sizeof(short) is :         " << sizeof(short) << " bytes \n" ; // Outputting the size of short
+    cout << " The sizeof(int) is :           " << sizeof(int) << " bytes \n" ; // Outputting the size of int
+    cout << " The sizeof(long) is :          " << sizeof(long) << " bytes \n" ; // Outputting the size of long
+    cout << " The sizeof(long long) is :     " << sizeof(long long) << " bytes \n"; // Outputting the size of long long
+    cout << " The sizeof(float) is :         " << sizeof(float) << " bytes \n" ; // Outputting the size of float
+    cout << " The sizeof(double) is :        " << sizeof(double) << " bytes \n"; // Outputting the size of double
+    cout << " The sizeof(long double) is :   " << sizeof(long double) << " bytes \n"; // Outputting the size of long double
+    cout << " The sizeof(bool) is :          " << sizeof(bool) << " bytes \n\n"; // Outputting the size of bool
+
+    return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+
+
+
+------
+
+
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    cout << "\n\n Find Size of fundamental data types :\n"; // Outputting a message for finding the size of fundamental data types
+	cout << "------------------------------------------\n"; // Outputting a separator line
+    cout << " The sizeof(char) is :          " << sizeof(char) << " bytes \n" ; // Outputting the size of char
+    cout << " The sizeof(short) is :         " << sizeof(short) << " bytes \n" ; // Outputting the size of short
+    cout << " The sizeof(int) is :           " << sizeof(int) << " bytes \n" ; // Outputting the size of int
+    cout << " The sizeof(long) is :          " << sizeof(long) << " bytes \n" ; // Outputting the size of long
+    cout << " The sizeof(long long) is :     " << sizeof(long long) << " bytes \n"; // Outputting the size of long long
+    cout << " The sizeof(float) is :         " << sizeof(float) << " bytes \n" ; // Outputting the size of float
+    cout << " The sizeof(double) is :        " << sizeof(double) << " bytes \n"; // Outputting the size of double
+    cout << " The sizeof(long double) is :   " << sizeof(long double) << " bytes \n"; // Outputting the size of long double
+    cout << " The sizeof(bool) is :          " << sizeof(bool) << " bytes \n\n"; // Outputting the size of bool
+
+    return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+-----
+
+
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    cout << "\n\n Check whether the primitive values crossing the limits or not :\n"; // Outputting a message to check primitive values
+	cout << "--------------------------------------------------------------------\n"; // Outputting a separator line
+
+    // Declaring and initializing various primitive data type variables
+    char gender = 'F';             // char is single-quoted
+    bool isEmployed = true;         // true(non-zero) or false(0)
+    unsigned short numOfsons = 2;  // [0, 255]
+    short yearOfAppt = 2009;       // [-32767, 32768]
+    unsigned int YearlyPackage = 1500000; // [0, 4294967295]
+    double height = 79.48;         // With fractional part
+    float gpa = 4.69f;             // Need suffix 'f' for float
+    long totalDrawan = 12047235L;  // Suffix 'L' for long
+    long long balance = 995324987LL;// Need suffix 'LL' for long long int  
+
+    // Outputting the values of the variables
+    cout << " The Gender is : " << gender << endl;
+    cout << " Is she married? : " << isEmployed << endl;
+    cout << " Number of sons she has : " << numOfsons << endl;
+    cout << " Year of her appointment : " << yearOfAppt << endl;
+    cout << " Salary for a year : " << YearlyPackage << endl;
+    cout << " Height is : " << height << endl;
+    cout << " GPA is " << gpa << endl;
+    cout << " Salary drawn up to : " << totalDrawan << endl;
+    cout << " Balance till : " << balance << endl;
+
+    return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+
+
+--------
+
+
+
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    int num = 57; // Initializing an integer variable 'num' with the value 57
+    cout << "\n\n Display the operation of pre and post increment and decrement :\n"; // Outputting a message for demonstrating increment and decrement operations
+    cout << "--------------------------------------------------------------------\n"; // Outputting a separator line    
+    cout <<" The number is : " << num << endl; // Displaying the initial value of 'num' 
+    num++; // Post-incrementing 'num' by 1
+    cout <<" After post increment by 1 the number is : " << num << endl; // Displaying 'num' after post-incrementing
+    ++num; // Pre-incrementing 'num' by 1
+    cout <<" After pre increment by 1 the number is : " << num << endl; // Displaying 'num' after pre-incrementing
+    num = num + 1; // Increasing 'num' by 1
+    cout <<" After increasing by 1 the number is : " << num << endl; // Displaying 'num' after increasing by 1
+    num--; // Post-decrementing 'num' by 1
+    cout <<" After post decrement by 1 the number is : " << num << endl; // Displaying 'num' after post-decrementing
+    --num; // Pre-decrementing 'num' by 1
+    cout <<" After pre decrement by 1 the number is : " << num << endl; // Displaying 'num' after pre-decrementing
+    num = num - 1; // Decreasing 'num' by 1
+    cout <<" After decreasing by 1 the number is : " << num << endl; // Displaying 'num' after decreasing by 1
+    cout << endl; // Outputting a blank line for better readability
+    return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+
+
+
+--------
+
+
+
+
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    int num = 57; // Initializing an integer variable 'num' with the value 57
+    cout << "\n\n Display the operation of pre and post increment and decrement :\n"; // Outputting a message for demonstrating increment and decrement operations
+    cout << "--------------------------------------------------------------------\n"; // Outputting a separator line    
+    cout <<" The number is : " << num << endl; // Displaying the initial value of 'num' 
+    num++; // Post-incrementing 'num' by 1
+    cout <<" After post increment by 1 the number is : " << num << endl; // Displaying 'num' after post-incrementing
+    ++num; // Pre-incrementing 'num' by 1
+    cout <<" After pre increment by 1 the number is : " << num << endl; // Displaying 'num' after pre-incrementing
+    num = num + 1; // Increasing 'num' by 1
+    cout <<" After increasing by 1 the number is : " << num << endl; // Displaying 'num' after increasing by 1
+    num--; // Post-decrementing 'num' by 1
+    cout <<" After post decrement by 1 the number is : " << num << endl; // Displaying 'num' after post-decrementing
+    --num; // Pre-decrementing 'num' by 1
+    cout <<" After pre decrement by 1 the number is : " << num << endl; // Displaying 'num' after pre-decrementing
+    num = num - 1; // Decreasing 'num' by 1
+    cout <<" After decreasing by 1 the number is : " << num << endl; // Displaying 'num' after decreasing by 1
+    cout << endl; // Outputting a blank line for better readability
+    return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+
+
+
+
+--------
+
+
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+	int num1, num2, sum; // Declaring integer variables num1, num2, and sum
+
+    cout << "\n Sum of two numbers :\n"; // Outputting a message indicating sum of two numbers
+	cout << "-------------------------\n"; // Outputting a separator line   
+
+    cout << " Input 1st number : "; // Prompting the user to input the first number
+	cin >> num1 ; // Taking input for the first number from the user
+
+	cout << " Input 2nd number : "; // Prompting the user to input the second number
+	cin >> num2; // Taking input for the second number from the user
+
+	sum = num1 + num2; // Calculating the sum of the two numbers
+
+	cout <<" The sum of the numbers is : " << sum << endl; // Displaying the sum of the numbers
+	cout << endl; // Outputting a blank line for better readability
+
+	return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+
+------------
