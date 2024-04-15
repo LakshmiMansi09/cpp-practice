@@ -4,120 +4,22 @@ using namespace std; // Using the standard namespace
 
 int main() // Start of the main function
 {
-    cout << "\n\n Find Size of fundamental data types :\n"; // Outputting a message for finding the size of fundamental data types
-	cout << "------------------------------------------\n"; // Outputting a separator line
-    cout << " The sizeof(char) is :          " << sizeof(char) << " bytes \n" ; // Outputting the size of char
-    cout << " The sizeof(short) is :         " << sizeof(short) << " bytes \n" ; // Outputting the size of short
-    cout << " The sizeof(int) is :           " << sizeof(int) << " bytes \n" ; // Outputting the size of int
-    cout << " The sizeof(long) is :          " << sizeof(long) << " bytes \n" ; // Outputting the size of long
-    cout << " The sizeof(long long) is :     " << sizeof(long long) << " bytes \n"; // Outputting the size of long long
-    cout << " The sizeof(float) is :         " << sizeof(float) << " bytes \n" ; // Outputting the size of float
-    cout << " The sizeof(double) is :        " << sizeof(double) << " bytes \n"; // Outputting the size of double
-    cout << " The sizeof(long double) is :   " << sizeof(long double) << " bytes \n"; // Outputting the size of long double
-    cout << " The sizeof(bool) is :          " << sizeof(bool) << " bytes \n\n"; // Outputting the size of bool
+    float kmph, miph; // Declaring floating-point variables for kilometers per hour and miles per hour
 
-    return 0; // Returning 0 to indicate successful program execution
-} // End of the main function
+    cout << "\n\n Convert kilometers per hour to miles per hour :\n"; // Outputting a message indicating unit conversion
+    cout << "----------------------------------------------------\n"; // Outputting a separator line
 
+    cout << " Input the distance in kilometer : "; // Prompting the user to input the distance in kilometers
+    cin >> kmph; // Taking input for kilometers per hour from the user
 
+    miph = (kmph * 0.6213712); // Converting kilometers per hour to miles per hour using the conversion factor
 
-------
-
-
-#include <iostream> // Including the input-output stream header file
-
-using namespace std; // Using the standard namespace
-
-int main() // Start of the main function
-{
-    cout << "\n\n Find Size of fundamental data types :\n"; // Outputting a message for finding the size of fundamental data types
-	cout << "------------------------------------------\n"; // Outputting a separator line
-    cout << " The sizeof(char) is :          " << sizeof(char) << " bytes \n" ; // Outputting the size of char
-    cout << " The sizeof(short) is :         " << sizeof(short) << " bytes \n" ; // Outputting the size of short
-    cout << " The sizeof(int) is :           " << sizeof(int) << " bytes \n" ; // Outputting the size of int
-    cout << " The sizeof(long) is :          " << sizeof(long) << " bytes \n" ; // Outputting the size of long
-    cout << " The sizeof(long long) is :     " << sizeof(long long) << " bytes \n"; // Outputting the size of long long
-    cout << " The sizeof(float) is :         " << sizeof(float) << " bytes \n" ; // Outputting the size of float
-    cout << " The sizeof(double) is :        " << sizeof(double) << " bytes \n"; // Outputting the size of double
-    cout << " The sizeof(long double) is :   " << sizeof(long double) << " bytes \n"; // Outputting the size of long double
-    cout << " The sizeof(bool) is :          " << sizeof(bool) << " bytes \n\n"; // Outputting the size of bool
-
-    return 0; // Returning 0 to indicate successful program execution
-} // End of the main function
------
-
-
-#include <iostream> // Including the input-output stream header file
-
-using namespace std; // Using the standard namespace
-
-int main() // Start of the main function
-{
-    cout << "\n\n Check whether the primitive values crossing the limits or not :\n"; // Outputting a message to check primitive values
-	cout << "--------------------------------------------------------------------\n"; // Outputting a separator line
-
-    // Declaring and initializing various primitive data type variables
-    char gender = 'F';             // char is single-quoted
-    bool isEmployed = true;         // true(non-zero) or false(0)
-    unsigned short numOfsons = 2;  // [0, 255]
-    short yearOfAppt = 2009;       // [-32767, 32768]
-    unsigned int YearlyPackage = 1500000; // [0, 4294967295]
-    double height = 79.48;         // With fractional part
-    float gpa = 4.69f;             // Need suffix 'f' for float
-    long totalDrawan = 12047235L;  // Suffix 'L' for long
-    long long balance = 995324987LL;// Need suffix 'LL' for long long int  
-
-    // Outputting the values of the variables
-    cout << " The Gender is : " << gender << endl;
-    cout << " Is she married? : " << isEmployed << endl;
-    cout << " Number of sons she has : " << numOfsons << endl;
-    cout << " Year of her appointment : " << yearOfAppt << endl;
-    cout << " Salary for a year : " << YearlyPackage << endl;
-    cout << " Height is : " << height << endl;
-    cout << " GPA is " << gpa << endl;
-    cout << " Salary drawn up to : " << totalDrawan << endl;
-    cout << " Balance till : " << balance << endl;
-
-    return 0; // Returning 0 to indicate successful program execution
-} // End of the main function
-
-
---------
-
-
-
-#include <iostream> // Including the input-output stream header file
-
-using namespace std; // Using the standard namespace
-
-int main() // Start of the main function
-{
-    int num = 57; // Initializing an integer variable 'num' with the value 57
-    cout << "\n\n Display the operation of pre and post increment and decrement :\n"; // Outputting a message for demonstrating increment and decrement operations
-    cout << "--------------------------------------------------------------------\n"; // Outputting a separator line    
-    cout <<" The number is : " << num << endl; // Displaying the initial value of 'num' 
-    num++; // Post-incrementing 'num' by 1
-    cout <<" After post increment by 1 the number is : " << num << endl; // Displaying 'num' after post-incrementing
-    ++num; // Pre-incrementing 'num' by 1
-    cout <<" After pre increment by 1 the number is : " << num << endl; // Displaying 'num' after pre-incrementing
-    num = num + 1; // Increasing 'num' by 1
-    cout <<" After increasing by 1 the number is : " << num << endl; // Displaying 'num' after increasing by 1
-    num--; // Post-decrementing 'num' by 1
-    cout <<" After post decrement by 1 the number is : " << num << endl; // Displaying 'num' after post-decrementing
-    --num; // Pre-decrementing 'num' by 1
-    cout <<" After pre decrement by 1 the number is : " << num << endl; // Displaying 'num' after pre-decrementing
-    num = num - 1; // Decreasing 'num' by 1
-    cout <<" After decreasing by 1 the number is : " << num << endl; // Displaying 'num' after decreasing by 1
+    cout << " The " << kmph << " Km./hr. means " << miph << " Miles/hr." << endl; // Displaying the converted value in miles per hour
     cout << endl; // Outputting a blank line for better readability
+
     return 0; // Returning 0 to indicate successful program execution
 } // End of the main function
-
-
-
---------
-
-
-
+---------------
 
 #include <iostream> // Including the input-output stream header file
 
@@ -125,55 +27,223 @@ using namespace std; // Using the standard namespace
 
 int main() // Start of the main function
 {
-    int num = 57; // Initializing an integer variable 'num' with the value 57
-    cout << "\n\n Display the operation of pre and post increment and decrement :\n"; // Outputting a message for demonstrating increment and decrement operations
-    cout << "--------------------------------------------------------------------\n"; // Outputting a separator line    
-    cout <<" The number is : " << num << endl; // Displaying the initial value of 'num' 
-    num++; // Post-incrementing 'num' by 1
-    cout <<" After post increment by 1 the number is : " << num << endl; // Displaying 'num' after post-incrementing
-    ++num; // Pre-incrementing 'num' by 1
-    cout <<" After pre increment by 1 the number is : " << num << endl; // Displaying 'num' after pre-incrementing
-    num = num + 1; // Increasing 'num' by 1
-    cout <<" After increasing by 1 the number is : " << num << endl; // Displaying 'num' after increasing by 1
-    num--; // Post-decrementing 'num' by 1
-    cout <<" After post decrement by 1 the number is : " << num << endl; // Displaying 'num' after post-decrementing
-    --num; // Pre-decrementing 'num' by 1
-    cout <<" After pre decrement by 1 the number is : " << num << endl; // Displaying 'num' after pre-decrementing
-    num = num - 1; // Decreasing 'num' by 1
-    cout <<" After decreasing by 1 the number is : " << num << endl; // Displaying 'num' after decreasing by 1
+    float kel, frh; // Declaring floating-point variables for Kelvin and Fahrenheit temperatures
+
+    cout << "\n\n Convert temperature in Kelvin to Fahrenheit :\n"; // Outputting a message indicating temperature conversion
+    cout << "---------------------------------------------------\n"; // Outputting a separator line
+
+    cout << " Input the temperature in Kelvin : "; // Prompting the user to input the temperature in Kelvin
+    cin >> kel; // Taking input for the temperature in Kelvin from the user
+
+    frh = (9.0 / 5) * (kel - 273.15) + 32; // Converting Kelvin to Fahrenheit using the conversion formula
+
+    cout << " The temperature in Kelvin    : " << kel << endl; // Displaying the input temperature in Kelvin
+    cout << " The temperature in Fahrenheit : " << frh << endl; // Displaying the converted temperature in Fahrenheit
     cout << endl; // Outputting a blank line for better readability
+
     return 0; // Returning 0 to indicate successful program execution
 } // End of the main function
 
-
-
-
---------
-
-
+-------------------------
 #include <iostream> // Including the input-output stream header file
 
 using namespace std; // Using the standard namespace
 
 int main() // Start of the main function
 {
-	int num1, num2, sum; // Declaring integer variables num1, num2, and sum
+    float kel, cel; // Declaring floating-point variables for Kelvin and Celsius temperatures
 
-    cout << "\n Sum of two numbers :\n"; // Outputting a message indicating sum of two numbers
-	cout << "-------------------------\n"; // Outputting a separator line   
+    cout << "\n\n Convert temperature in Kelvin to Celsius :\n"; // Outputting a message indicating temperature conversion
+    cout << "------------------------------------------------\n"; // Outputting a separator line
 
-    cout << " Input 1st number : "; // Prompting the user to input the first number
-	cin >> num1 ; // Taking input for the first number from the user
+    cout << " Input the temperature in Kelvin : "; // Prompting the user to input the temperature in Kelvin
+    cin >> kel; // Taking input for the temperature in Kelvin from the user
 
-	cout << " Input 2nd number : "; // Prompting the user to input the second number
-	cin >> num2; // Taking input for the second number from the user
+    cel = kel - 273.15; // Converting Kelvin to Celsius using the conversion formula
 
-	sum = num1 + num2; // Calculating the sum of the two numbers
+    cout << " The temperature in Kelvin    : " << kel << endl; // Displaying the input temperature in Kelvin
+    cout << " The temperature in Celsius : " << cel << endl; // Displaying the converted temperature in Celsius
+    cout << endl; // Outputting a blank line for better readability
 
-	cout <<" The sum of the numbers is : " << sum << endl; // Displaying the sum of the numbers
-	cout << endl; // Outputting a blank line for better readability
-
-	return 0; // Returning 0 to indicate successful program execution
+    return 0; // Returning 0 to indicate successful program execution
 } // End of the main function
+-------------------------------------------
 
-------------
+#include <iostream> // Including input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    int dividend, divisor, quotient, remainder; // Declaring integer variables for dividend, divisor, quotient, and remainder
+
+    cout << "\n\n Compute quotient and remainder :\n"; // Outputting a message indicating the purpose of the program
+    cout << "-------------------------------------\n"; // Outputting a separator line
+
+    cout << " Input the dividend : "; // Prompting the user to input the dividend
+    cin >> dividend; // Taking input for the dividend from the user
+
+    cout << " Input the divisor : "; // Prompting the user to input the divisor
+    cin >> divisor; // Taking input for the divisor from the user
+
+    quotient = dividend / divisor; // Calculating the quotient of the division
+    remainder = dividend % divisor; // Calculating the remainder of the division
+
+    cout << " The quotient of the division is : " << quotient << endl; // Displaying the calculated quotient
+    cout << " The remainder of the division is : " << remainder << endl; // Displaying the calculated remainder
+    cout << endl; // Outputting a blank line for better readability
+
+    return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+--------------------------------------
+#include <iostream> // Including input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    signed long num1 = 0; // Declaring and initializing a signed long variable num1 to zero
+
+    cout << "\n\n Check whether a number is positive, negative or zero :\n"; // Outputting a message indicating the purpose of the program
+    cout << "-----------------------------------------------------------\n"; // Outputting a separator line
+
+    cout << " Input a number : "; // Prompting the user to input a number
+    cin >> num1; // Taking input for the variable num1 from the user
+
+    if (num1 > 0) // Checking if the entered number is greater than zero
+    {
+        cout << " The entered number is positive.\n\n"; // Outputting a message if the number is positive
+    }
+    else if (num1 < 0) // Checking if the entered number is less than zero
+    {
+        cout << " The entered number is negative.\n\n"; // Outputting a message if the number is negative
+    }
+    else // Handling the case where the entered number is zero
+    {
+        std::cout << " The number is zero.\n\n"; // Outputting a message if the number is zero
+    }
+
+    return 0; // Returning 0 to indicate successful program execution
+} // End of the main function
+----------------------------------------
+#include <iostream> // Including the input-output stream header file
+#include <iomanip>  // Including the header file for input-output manipulators
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    // Outputting a message indicating the purpose of the program
+    cout << "\n\n Formatting the output using type casting:\n";
+    cout << "----------------------------------------------\n"; 
+
+    cout << "Print floating-point number in fixed format with 1 decimal place: "; // Outputting a message
+
+    cout << fixed << setprecision(1); // Setting the floating-point number to display with 1 decimal place
+
+    cout << "\nTest explicit type casting :\n"; // Outputting a message for explicit type casting
+
+    int i1 = 4, i2 = 8; // Initializing two integer variables
+
+    cout << i1 / i2 << endl;       // Outputting the result of integer division
+    cout << (double)i1 / i2 << endl;  // Explicitly casting i1 to double before division
+    cout << i1 / (double)i2 << endl;  // Explicitly casting i2 to double before division
+    cout << (double)(i1 / i2) << endl; // Casting the result of the integer division to double
+
+    double d1 = 5.5, d2 = 6.6; // Initializing two double variables
+
+    cout << "\nTest implicit type casting :\n"; // Outputting a message for implicit type casting
+
+    cout << (int)d1 / i2 << endl;    // Implicitly casting d1 to int before division with i2
+    cout << (int)(d1 / i2) << endl;  // Casting the result of d1 divided by i2 to int
+
+    cout << "\nint implicitly casts to double: \n";
+    d1 = i1; // Implicitly casting integer i1 to double d1
+    cout << d1 << endl;  // Outputting the value of d1 after casting (implicit type casting)
+
+    cout << "double truncates to int!: \n";
+    i2 = d2; // Implicitly casting double d2 to int i2
+    cout << i2 << endl; // Outputting the value of i2 after casting (implicit type casting)
+
+    return 0; // Returning 0 to indicate successful program execution
+}
+-----------
+#include <iostream> // Including the input-output stream header file
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    cout << "\n\n Print a mystery series:\n"; // Outputting a message indicating the purpose of the program
+    cout << "-------------------------\n";
+    cout << " The series are: \n"; // Outputting a message indicating the series to be printed
+
+    int nm1 = 1; // Initializing variable nm1 to 1
+
+    while (true) // Starting an infinite loop
+    {
+        ++nm1; // Incrementing nm1 by 1 in each iteration
+
+        if ((nm1 % 3) == 0) // Checking if nm1 is divisible by 3
+            continue; // Skipping further execution of the loop if nm1 is divisible by 3
+
+        if (nm1 == 50) // Checking if nm1 is equal to 50
+            break; // Exiting the loop if nm1 is equal to 50
+
+        if ((nm1 % 2) == 0) // Checking if nm1 is even
+        {
+            nm1 += 3; // Adding 3 to nm1 if it's even
+        }
+        else
+        {
+            nm1 -= 3; // Subtracting 3 from nm1 if it's odd
+        }
+
+        cout << nm1 << " "; // Outputting the current value of nm1 followed by a space
+    }
+
+    cout << endl; // Adding a new line after printing the series
+    return 0; // Returning 0 to indicate successful program execution
+}
+--------------------------------
+#include <iostream> // Including the input-output stream header file
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    cout << "\n\n Print the following pattern:\n"; // Outputting a message indicating the purpose of the program
+    cout << "--------------------------------\n";
+    cout << " xxxxx\n"; // Outputting a specific pattern line by line
+    cout << "x     x       x        x\n";
+    cout << "x             x        x\n";
+    cout << "x          xxxxxxx  xxxxxxx\n";
+    cout << "x             x        x\n";
+    cout << "x     x       x        x\n";
+    cout << " xxxxx\n";
+
+    return 0; // Returning 0 to indicate successful program execution
+}
+
+------------------------------
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    int rad1; // Declaring an integer variable to store the radius of the sphere
+    float volsp; // Declaring a floating-point variable to store the volume of the sphere
+
+    cout << "\n\n Calculate the volume of a sphere :\n"; // Outputting a message indicating the purpose of the program
+    cout << "---------------------------------------\n"; // Displaying a separator line
+
+    cout << " Input the radius of a sphere : "; // Prompting the user to input the radius of the sphere
+    cin >> rad1; // Reading the radius of the sphere from the user
+
+    // Calculating the volume of the sphere using the formula: (4 * π * r^3) / 3
+    volsp = (4 * 3.14 * rad1 * rad1 * rad1) / 3;
+
+    cout << " The volume of a sphere is : " << volsp << endl; // Outputting the calculated volume of the sphere
+
+    cout << endl; // Displaying an empty line for better readability
+    return 0; // Return statement indicating successful completion of the program
+}
+------------------------------------
