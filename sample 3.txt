@@ -1,0 +1,172 @@
+#include <iostream> // Including the input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    cout << "\n\n Compute the specified expressions and print the output:\n"; // Outputting a message indicating the purpose of the program
+    cout << "------------------------------------------------------------\n"; // Outputting a separator line
+
+    // Calculating and outputting the result of the given expression
+    cout << " Result of the expression "
+<< "(25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5) is : " // Outputting the expression
+<< (25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5) << "\n"; // Calculating and outputting the result of the expression
+
+    return 0; // Returning 0 to indicate successful program execution
+}
+--------------------
+
+#include <iostream> // Including the input-output stream header file
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    cout << "\n\n Print a mystery series:\n"; // Outputting a message indicating the purpose of the program
+    cout << "-------------------------\n";
+    cout << " The series are: \n"; // Outputting a message indicating the series to be printed
+
+    int nm1 = 1; // Initializing variable nm1 to 1
+
+    while (true) // Starting an infinite loop
+    {
+        ++nm1; // Incrementing nm1 by 1 in each iteration
+
+        if ((nm1 % 3) == 0) // Checking if nm1 is divisible by 3
+            continue; // Skipping further execution of the loop if nm1 is divisible by 3
+
+        if (nm1 == 50) // Checking if nm1 is equal to 50
+            break; // Exiting the loop if nm1 is equal to 50
+
+        if ((nm1 % 2) == 0) // Checking if nm1 is even
+        {
+            nm1 += 3; // Adding 3 to nm1 if it's even
+        }
+        else
+        {
+            nm1 -= 3; // Subtracting 3 from nm1 if it's odd
+        }
+
+        cout << nm1 << " "; // Outputting the current value of nm1 followed by a space
+    }
+
+    cout << endl; // Adding a new line after printing the series
+    return 0; // Returning 0 to indicate successful program execution
+}
+
+----------------------------
+#include<iostream> // Including input-output stream header file
+
+using namespace std; // Using the standard namespace
+
+int main() // Start of the main function
+{
+    float ang1, ang2, ang3; // Declaring variables to store angles of a triangle
+
+    cout << "\n\n Find the third angle of a triangle :\n"; // Displaying the purpose of the program
+    cout << "-----------------------------------------\n";
+
+    cout << " Input the 1st angle of the triangle : "; // Prompting the user to input the 1st angle of the triangle
+    cin >> ang1; // Taking input of the 1st angle from the user
+
+    cout << " Input the 2nd angle of the triangle : "; // Prompting the user to input the 2nd angle of the triangle
+    cin >> ang2; // Taking input of the 2nd angle from the user
+
+    ang3 = 180 - (ang1 + ang2); // Calculating the 3rd angle of the triangle using the sum of angles
+    cout << " The 3rd angle of the triangle is : " << ang3 << endl; // Displaying the calculated 3rd angle
+
+    cout << endl; // Displaying an empty line for better readability
+
+    return 0; // Returning 0 to indicate successful program execution
+}
+
+---------------
+
+#include <iostream> // Including input-output stream header file
+#include <math.h>   // Including math functions header file
+
+using namespace std; // Using the standard namespace
+
+int main() { // Start of the main function
+
+    double d, la1, la2, lo1, lo2, er, r; // Declaration of variables to store coordinates, distance, and radius
+
+    cout << "\n\n Print the distance between two points on the surface of earth:\n"; // Displaying the purpose of the program
+	cout << "-----------------------------------------------------------------------\n";
+	
+	cout << " Input the latitude of coordinate 1: "; // Prompting user to input latitude of coordinate 1
+	cin >> la1; // Taking input from user and storing it in variable 'la1'
+	
+	cout << " Input the longitude of coordinate 1: "; // Prompting user to input longitude of coordinate 1
+	cin >> lo1; // Taking input from user and storing it in variable 'lo1'
+	
+	cout << " Input the latitude of coordinate 2: "; // Prompting user to input latitude of coordinate 2
+	cin >> la2; // Taking input from user and storing it in variable 'la2'
+	
+	cout << " Input the longitude of coordinate 2: "; // Prompting user to input longitude of coordinate 2
+	cin >> lo2; // Taking input from user and storing it in variable 'lo2'	
+	
+	r = 0.01745327; // Conversion factor Pi/180
+	
+	// Converting latitude and longitude values from degrees to radians
+	la1 = la1 * r; 
+	la2 = la2 * r;
+	lo1 = lo1 * r;
+	lo2 = lo2 * r;
+	
+	er = 6371.01; // Earth's radius in kilometers
+	
+	// Calculating the distance between two points on the Earth's surface using Haversine formula
+	d = er * acos((sin(la1) * sin(la2)) + (cos(la1) * cos(la2) * cos(lo1 - lo2)));
+	
+	cout << " The distance between those points is: " << d << "\n"; // Displaying the calculated distance
+	
+	return 0; // Returning 0 to indicate successful program execution
+}
+---------------------------
+
+
+#include <iostream> // Header file for input/output stream operations
+using namespace std;
+
+int main() {
+    const int MAX = 1000000; // Constant for the maximum value
+    const int sqrtMAX = 1000; // Constant for square root of the maximum value
+    int n; // Variable to store the user input for the count of prime numbers
+    int b[MAX + 1] = {0}; // Array to mark non-prime numbers
+    int i, j; // Loop control variables
+    int sum; // Variable to store the sum of prime numbers
+    int count; // Variable to count the number of prime numbers found
+    b[0] = 1; // Mark 0 as non-prime
+    b[1] = 1; // Mark 1 as non-prime
+
+    cin >> n; // Input the number of prime numbers to be found
+
+    // Mark multiples of 2 as non-prime numbers
+    for (i = 4; i <= MAX; i += 2)
+        b[i] = 1;
+
+    // Sieve of Eratosthenes: Mark multiples of odd numbers as non-prime
+    for (i = 3; i <= sqrtMAX; i += 2)
+        for (j = i + i; j <= MAX; j += i)
+            b[j] = 1;
+
+    // If input is 0, exit the program
+    if (n == 0)
+        return 0;
+
+    sum = 0; // Initialize sum to 0
+    count = 0; // Initialize count of prime numbers found to 0
+
+    // Loop through the array to find and sum the first 'n' prime numbers
+    for (i = 2; count < n; i++) {
+        if (b[i] == 0) { // If the number is not marked as non-prime
+            count++; // Increment the count of prime numbers found
+            sum += i; // Add the prime number to the sum
+        }
+    }
+
+    // Display the sum of the first 'n' prime numbers
+    cout << "Sum of the first " << n << " Prime numbers is: " << sum;
+    return 0; // Indicating successful completion of the program
+}
+-------------------------
